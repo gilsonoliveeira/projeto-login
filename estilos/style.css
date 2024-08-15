@@ -9,3 +9,17 @@ Azul: #3A445D
 
 */
 
+:root {
+    --cor0: #C6F6FC;
+    --cor1: #928779;
+    --cor2: #3A445D;
+    --cor3: #0A3200;
+
+    --fonte-padrao: arial,verdana,helvetica,sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1), var(--cor2));
+}
