@@ -65,8 +65,12 @@ div#imagem > img {
 }
 
 img {   
-    width: 40px;
+    width: 30px;
+    height: 30px;
     padding-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -109,11 +113,6 @@ img {
 
 }
 
-
-#entrar {
-    margin-bottom: 5px;
-}
-
 #formulario input[type="submit"] {
     width: 310px;
     padding: 12px;
@@ -123,10 +122,11 @@ img {
     color: var(--cor2);
     display: block;
     margin: auto;
+    margin-bottom: 5px;
     
 }
 
-.carta  {
+a  {
     width: 290px;
     padding: 8px;
     background-color: white;
@@ -134,10 +134,7 @@ img {
     border-radius: 5px;
     display: flex;
     align-items: center;
-    justify-content: center;;
-}
-
-.carta > a {
+    justify-content: center;
     text-decoration: none;
     color: var(--cor2);
 }
@@ -145,10 +142,11 @@ img {
 
 span {
     padding-left: 3px;
-    color: var(--cor2);
+    color: var(--cor0);
 }
 
-#formulario input[type="submit"]:hover, .carta:hover {
+
+#formulario input[type="submit"]:hover, a:hover {
     cursor: pointer;
     background-color: var(--cor2);
     color: white;
