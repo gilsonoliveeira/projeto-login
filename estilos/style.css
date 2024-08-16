@@ -35,8 +35,9 @@ Grandes Telas: Acima de 1200px
     padding: 0px;
 }
 
-html {
-    height: 100vh;
+main {
+    height: 90vh;
+    
 }
 
 body {
@@ -56,11 +57,13 @@ section {
        
 }
 
-div#imagem > img {
+div#imagem  {
+    background-image: url(../imagens/pexels-pixabay-248921.jpg);
     display: block;
+    background-size: cover;
+    background-position: left;
     width: 330px;
     height: 180px;
-    margin: auto;
     border-radius: 20px 20px 0px 0px;
 }
 
