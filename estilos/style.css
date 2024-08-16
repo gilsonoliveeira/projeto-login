@@ -50,8 +50,10 @@ div#imagem > img {
 }
 
 img {   
-    width: 8vh;
+    width: 6vh;
+    padding-right: 8px;
 }
+
 
 #formulario {
     margin: 10px;
@@ -84,8 +86,16 @@ img {
 #isenha input, #iemail input {
     background-color: var(--cor0);
     height: 85%;
-    border-radius: 5px;
+    border-radius: 8px;
     border: none;
+    width: 76%;
+    padding-left: 5px;
+
+}
+
+
+#entrar {
+    margin-bottom: 5px;
 }
 
 #formulario input[type="submit"] {
@@ -98,10 +108,7 @@ img {
     color: var(--cor2);
     display: block;
     margin: auto;
-}
-
-#entrar {
-    margin-bottom: 5px;
+    
 }
 
 #formulario input[type="button"] {
@@ -110,11 +117,17 @@ img {
     padding: 12px;
     background-color: white;
     margin: auto;
+    border: 2px solid var(--cor0);
     border-radius: 5px;
-    border-color: var(--cor0);
-    color: var(--cor1);
+    color: var(--cor2);
 }
 
+#formulario input[type="submit"]:hover, #formulario input[type="button"]:hover {
+    cursor: pointer;
+    background-color: var(--cor2);
+    color: white;
+    transition-duration: 0.5s;
+}
 
 
 
