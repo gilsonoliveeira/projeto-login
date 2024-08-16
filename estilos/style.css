@@ -9,6 +9,18 @@ Azul: #3A445D
 
 */
 
+/*Todas as Demais Medias */
+
+/*Typical Device Breakpoints
+-----------------------------
+Pequenas Telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
+Grandes Telas: Acima de 1200px
+
+*/
+
 :root {
     --cor0: #C6F6FC;
     --cor1: #928779;
@@ -23,9 +35,11 @@ Azul: #3A445D
     padding: 0px;
 }
 
+html {
+    height: 100vh;
+}
+
 body {
-    height: 90vh;
-    width: 90vw;
     background-color: var(--cor2);
 }
 
@@ -33,24 +47,25 @@ body {
 section {
     display: block;
     margin: auto;
-    width: 50vw;
-    height: 85vh;
+    max-width: 330px;
+    height: 510px;
     border-radius: 20px ;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin-top: 50px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.144);
        
 }
 
 div#imagem > img {
     display: block;
-    width: 50vw;
-    height: 27vh;
+    width: 330px;
+    height: 180px;
     margin: auto;
     border-radius: 20px 20px 0px 0px;
 }
 
 img {   
-    width: 6vh;
+    width: 40px;
     padding-right: 8px;
 }
 
@@ -75,20 +90,21 @@ img {
 
 #iemail , #isenha {
     display: flex;
+    width: 310px;
     justify-content: center;
     align-items: center;
     background-color: var(--cor2);
     margin-bottom: 10px;
-    height: 8vh;
+    height: 50px;
     border-radius: 10px;
 }
 
 #isenha input, #iemail input {
     background-color: var(--cor0);
-    height: 85%;
+    height: 40px;
     border-radius: 8px;
     border: none;
-    width: 76%;
+    width: 250px;
     padding-left: 5px;
 
 }
@@ -99,11 +115,10 @@ img {
 }
 
 #formulario input[type="submit"] {
-    width: 46vw;
+    width: 310px;
     padding: 12px;
     background-color: var(--cor0);
     border-radius: 5px;
-    border-color: var(--cor0);
     border: none;
     color: var(--cor2);
     display: block;
@@ -111,23 +126,35 @@ img {
     
 }
 
-#formulario input[type="button"] {
-    display: block;
-    width: 46vw;
-    padding: 12px;
+.carta  {
+    width: 290px;
+    padding: 8px;
     background-color: white;
-    margin: auto;
     border: 2px solid var(--cor0);
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+}
+
+.carta > a {
+    text-decoration: none;
     color: var(--cor2);
 }
 
-#formulario input[type="submit"]:hover, #formulario input[type="button"]:hover {
+
+span {
+    padding-left: 3px;
+    color: var(--cor2);
+}
+
+#formulario input[type="submit"]:hover, .carta:hover {
     cursor: pointer;
     background-color: var(--cor2);
     color: white;
     transition-duration: 0.5s;
 }
+
 
 
 
