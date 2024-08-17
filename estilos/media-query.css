@@ -41,7 +41,7 @@ Grandes Telas: Acima de 1200px
         float: left;
         width: 30%;
         height: 100%;
-    }
+    }  
 
     section#login > div#formulario { 
         float: right;
@@ -60,7 +60,7 @@ Grandes Telas: Acima de 1200px
     }
     section#login {
         width: 70vw;
-        height: 63%;
+        height: 68%;
         
     }
 
@@ -75,9 +75,12 @@ Grandes Telas: Acima de 1200px
         width: 50%;
     }
 
-    #isenha input, #iemail input {
-        width: 89%;
-            
+    section#login > #formulario > h1{
+        font-size: 2em;
+    }
+
+    section#login > #formulario > p {
+        font-size: 1em;
     }
 
 

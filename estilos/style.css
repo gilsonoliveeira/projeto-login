@@ -6,7 +6,7 @@
     --cor2: #3A445D;
     --cor3: #0A3200;
 
-    --fonte-padrao: arial,verdana,helvetica,sans-serif;
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
 }
 
 * {
@@ -16,7 +16,8 @@
 }
 
 
-body,html {
+body,
+html {
     background-color: var(--cor2);
     height: 90vh;
     width: 100vw;
@@ -36,18 +37,18 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
     width: 330px;
     height: 510px;
     border-radius: 20px;
     margin-top: 50px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0,0.450);
-    overflow: hidden;  
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.450);
+    overflow: hidden;
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
-section#login > div#imagem  {
+section#login>div#imagem {
     background-image: url(../imagens/pexels-pixabay-248921.jpg);
     display: block;
     background-size: cover;
@@ -57,43 +58,44 @@ section#login > div#imagem  {
 
 }
 
-section#login > #formulario {
+section#login>#formulario {
     padding: 10px;
     display: block;
 }
 
-section#login > #formulario > h1 {
+section#login>#formulario>h1 {
     font-family: var(--fonte-padrao);
     text-align: center;
     padding-bottom: 10px;
 }
 
-section#login > #formulario > p {
+section#login>#formulario>p {
     font-family: var(--fonte-padrao);
-    font-size:  0.8em;
+    font-size: 0.8em;
     padding-bottom: 10px;
     text-align: center;
 
 }
 
-img {   
+img {
     width: 35px;
     height: 35px;
-    padding-right: 6px;
+    padding-right: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#iemail , #isenha {
+#iemail, #isenha {
     display: flex;
     width: 100%;
+    height: 50px;
     justify-content: center;
     align-items: center;
     background-color: var(--cor2);
     margin-bottom: 10px;
-    height: 50px;
     border-radius: 10px;
+    border: none;
 }
 
 #isenha input, #iemail input {
@@ -101,26 +103,30 @@ img {
     height: 40px;
     border-radius: 8px;
     border: none;
-    width: 85%;
+    width: calc(100% - 42px);
     padding-left: 5px;
 
 }
 
-#formulario input[type="submit"] {
-    width: 100%;
-    padding: 12px;
-    background-color: var(--cor0);
-    border-radius: 5px;
-    border: none;
-    color: var(--cor2);
-    display: block; 
-    margin-bottom: 5px;
-    
+#isenha input:focus-within, #iemail input:focus-within { /*Deixa o campo branco após clicar para digitar */
+    background-color: white;
 }
 
-a  {
+#formulario input[type="submit"] {
+    display: block;
     width: 100%;
-    padding: 8px;
+    height: 40px;
+    background-color: var(--cor0);
+    color: var(--cor2);
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 5px;
+
+}
+
+a {
+    width: 100%;
+    height: 40px;
     background-color: white;
     border: 2px solid var(--cor0);
     border-radius: 5px;
@@ -138,13 +144,10 @@ span {
 }
 
 
-#formulario input[type="submit"]:hover, a:hover {
+#formulario input[type="submit"]:hover,
+a:hover {
     cursor: pointer;
     background-color: var(--cor2);
     color: white;
     transition-duration: 0.5s;
 }
-
-
-
-
