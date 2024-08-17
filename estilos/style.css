@@ -35,36 +35,63 @@ Grandes Telas: Acima de 1200px
     padding: 0px;
 }
 
-main {
-    height: 90vh;
-    
-}
 
-body {
+body,html {
     background-color: var(--cor2);
+    height: 90vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 90vh;
+    width: 100vw;
 }
 
 
-section {
+
+section#login {
+    background-color: rgb(255, 255, 255);
     display: block;
-    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     max-width: 330px;
     height: 510px;
-    border-radius: 20px ;
-    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
     margin-top: 50px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.144);
-       
+    box-shadow: 0px 0px 20px rgba(0, 0, 0,0.450);
+    overflow: hidden;  
 }
 
-div#imagem  {
+section#login > div#imagem  {
     background-image: url(../imagens/pexels-pixabay-248921.jpg);
     display: block;
     background-size: cover;
     background-position: left;
-    width: 330px;
     height: 180px;
-    border-radius: 20px 20px 0px 0px;
+
+
+}
+
+section#login > #formulario {
+    padding: 10px;
+    display: block;
+}
+
+section#login > #formulario > h1 {
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+section#login > #formulario > p {
+    font-family: var(--fonte-padrao);
+    font-size:  0.8em;
+    padding-bottom: 10px;
+    text-align: center;
+
 }
 
 img {   
@@ -74,25 +101,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-
-#formulario {
-    margin: 10px;
-}
-
-#formulario > h1 {
-    font-family: var(--fonte-padrao);
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-#formulario > p {
-    font-family: var(--fonte-padrao);
-    font-size:  0.8em;
-    padding-bottom: 10px;
-    text-align: center;
-
 }
 
 #iemail , #isenha {
