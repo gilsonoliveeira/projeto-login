@@ -1,26 +1,5 @@
 @charset "UTF-8";
 
-/*
-Paleta de Cores 
-
-Ciano: #C6F6FC
-Cinza: #928779
-Azul: #3A445D  
-
-*/
-
-/*Todas as Demais Medias */
-
-/*Typical Device Breakpoints
------------------------------
-Pequenas Telas: até 600px
-Celular: de 600px até 768px
-Tablet: de 768px até 992px
-Desktop: de 992px até 1200px
-Grandes Telas: Acima de 1200px
-
-*/
-
 :root {
     --cor0: #C6F6FC;
     --cor1: #928779;
@@ -33,6 +12,7 @@ Grandes Telas: Acima de 1200px
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 
@@ -57,12 +37,14 @@ section#login {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    max-width: 330px;
+    width: 330px;
     height: 510px;
     border-radius: 20px;
     margin-top: 50px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0,0.450);
     overflow: hidden;  
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem  {
@@ -95,9 +77,9 @@ section#login > #formulario > p {
 }
 
 img {   
-    width: 30px;
-    height: 30px;
-    padding-right: 8px;
+    width: 35px;
+    height: 35px;
+    padding-right: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,7 +87,7 @@ img {
 
 #iemail , #isenha {
     display: flex;
-    width: 310px;
+    width: 100%;
     justify-content: center;
     align-items: center;
     background-color: var(--cor2);
@@ -119,26 +101,25 @@ img {
     height: 40px;
     border-radius: 8px;
     border: none;
-    width: 250px;
+    width: 85%;
     padding-left: 5px;
 
 }
 
 #formulario input[type="submit"] {
-    width: 310px;
+    width: 100%;
     padding: 12px;
     background-color: var(--cor0);
     border-radius: 5px;
     border: none;
     color: var(--cor2);
-    display: block;
-    margin: auto;
+    display: block; 
     margin-bottom: 5px;
     
 }
 
 a  {
-    width: 290px;
+    width: 100%;
     padding: 8px;
     background-color: white;
     border: 2px solid var(--cor0);
@@ -152,8 +133,8 @@ a  {
 
 
 span {
-    padding-left: 3px;
     color: var(--cor0);
+    padding-left: 3px;
 }
 
 
